@@ -1,24 +1,29 @@
-# Compiled class file
-*.class
+//Os primeiros dois anos da vida de um cão contam como 10,5 anos caninos cada. 
+//Cada ano seguinte equivale a 4 anos caninos.
 
-# Log file
-*.log
+//criar uma variavel com a idade
+const myAge = 24;
 
-# BlueJ files
-*.ctxt
+//criar uma variavel com os dois primeiros anos
+let earlyYears = 2;
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+//multiplicar o valor salvo em earlyYears dos dois primeiros anos
+earlyYears *= 10.5;
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+//como ja foi contabilizado os 2 primeiros anos, então subtraimos a idade
+let laterYears = myAge - 2;
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+//multiplicar a variavel lateryears
+laterYears *= 4;
+console.log("early:" + earlyYears);
+console.log("later:" + laterYears);
+
+//idade em anos de cachorro
+let myAgeInDogYears = earlyYears + laterYears;
+
+let myName = "gustavo medeiros".toLowerCase();
+
+//finalizar com uma interpolação de string
+console.log(
+  `My name is ${myName}. I am ${myAge} years old in human years which is ${myAgeInDogYears} years old in dog years.`
+);

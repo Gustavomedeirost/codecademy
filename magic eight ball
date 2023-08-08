@@ -1,0 +1,40 @@
+//define a variable
+let userName = "Gustavo";
+const userQuestion ="What is your wish";
+let randomNumber = Math.floor(Math.random() * 8);
+let eightBall = '';
+
+//create a string interpolation
+userName ? console.log(`Hello, ${userName}!`) : console.log('Hello!')
+
+console.log(`${userQuestion}, ${userName}?`);
+
+//create a random number between 0 and 7
+switch (randomNumber){
+  case 0:
+    eightBall = 'It is certain';
+    break;
+  case 01:
+    eightBall = 'It is decidedly so';
+    break;
+  case 02:
+    eightBall = 'Reply hazy try again';
+    break;
+  case 03:
+    eightBall = 'Cannot predict now';
+    break;
+  case 04:
+    eightBall = 'Do not count on it';
+    break;
+  case 05:
+    eightBall = 'My sources say no';
+    break;
+  case 06:
+    eightBall = 'Outlook not so good';
+    break;
+  default:
+    eightBall = 'Signs point to yes'
+}
+
+//the value of the magic eight Ball
+console.log(`Magic eight Ball: ${eightBall}`);
